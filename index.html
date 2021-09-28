@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title> Eventos </title>
+</head>
+<body>
+    <div class="calculator__container">
+        <div class="calculator__content">
+            <div class="calculator__header">
+                <div>
+                    <span id="sp">0</span>
+                    <span id="screen"></span>
+                </div>
+            </div>
+            <div class="calculator__result" id='operation'>0</div>
+            <div class="calculator__body">
+                <button class="btn" value="7" onclick='insert("7")'> 7 </button>
+                <button value="8" onclick='insert("8")'> 8 </button>
+                <button value="9" onclick='insert("9")'> 9 </button>
+                <button class="--fn" value="*" onclick='insert("*")'> x </button>
+
+                <button value="4" onclick='insert("4")'> 4 </button>
+                <button value="5" onclick='insert("5")'> 5 </button>
+                <button value="6" onclick='insert("6")'> 6 </button>
+                <button class="--fn" value="-" onclick='insert("-")'> - </button>
+
+                <button value="1" onclick='insert("1")'> 1 </button>
+                <button value="2" onclick='insert("2")'> 2 </button>
+                <button value="3" onclick='insert("3")'> 3 </button>
+                <button class="--fn" value="+" onclick='insert("+")'> + </button>
+
+                <button value="." onclick='insert(".")'> . </button>
+                <button value="0" onclick='insert("0")'> 0 </button>
+                <button value="=" onclick='calculate()'> = </button>
+                <button class="--fn" value="/" onclick='insert("/")'> / </button>
+
+                <button class="--border" id="btn-back" value="0" onclick='back()'> < </button>
+                <button class="btnx2" id="btn-clear" value="=" onclick='clean()'> C </button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
