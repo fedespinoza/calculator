@@ -6,6 +6,7 @@ html, body {
 h3 {
     color: #99a4fc;
     font-weight: bold;
+    text-align: center;
 }
 
 .calculator__container {
